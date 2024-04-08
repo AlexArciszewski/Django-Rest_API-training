@@ -1,10 +1,8 @@
-from django.shortcuts import render
-
 # Create your views here.
 from django.contrib.auth.models import Group, User
 from rest_framework import permissions, viewsets
 
-from movierater.api.serializers import GroupSerializer, UserSerializer
+from api.serializers import GroupSerializer, UserSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
